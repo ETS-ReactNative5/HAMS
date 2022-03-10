@@ -132,9 +132,9 @@ const BmrCalculator = ({navigation}) => {
     };
 
     const _showModal = () => {
-		if(showModal) {
+		if (showModal) {
 			return (
-				<Modal style = {{flex: 1,}}
+				<Modal
 					isVisible= {showModal}
 					animationIn = "slideInUp"
 					animationOut = "slideOutDown"
@@ -161,7 +161,7 @@ const BmrCalculator = ({navigation}) => {
                                         style = {{height:100}}
                                     />
                                 </View>
-								<Text style={styles.modalTextStyle}>Change in BMR</Text>
+								<Text style={styles.modalTextStyle}>Predicted BMR</Text>
                                 <View style={styles.modalHorizontalViewStyle}>
                                     <Text style={styles.modalTextLabelStyle}>BMR (kcal) : </Text>
                                     <Text style={styles.modalTextValueStyle}>{BMR}</Text>
@@ -209,7 +209,7 @@ const BmrCalculator = ({navigation}) => {
                         BMR Calculator (kcal)
                     </Text>
                     <Text style={styles.subHeadingTextStyle}>
-                        To calculate your change in BMR:
+                        To calculate your BMR:
                     </Text>
                     <Text style={styles.subHeadingText2Style}>
                         {'\n'}* please enter your gender.

@@ -132,7 +132,7 @@ const WeightCalculator = ({navigation}) => {
     const _showModal = () => {
 		if (showModal) {
 			return (
-				<Modal style = {{flex: 1,}}
+				<Modal
 					isVisible= {showModal}
 					animationIn = "slideInUp"
 					animationOut = "slideOutDown"
@@ -259,7 +259,7 @@ const WeightCalculator = ({navigation}) => {
                         <Item regular style = {[styles.textBoxStyle]}>
                             <Input
                                 ref={refnewBMR}
-                                placeholder= "Enter BMR when calculating weight"
+                                placeholder= "Enter total calories here"
                                 autoCorrect = {false}
                                 clearButtonMode = "while-editing"
                                 keyboardAppearance = "dark"
